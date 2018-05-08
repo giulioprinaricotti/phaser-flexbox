@@ -1,0 +1,9 @@
+{
+    "name": "phaser-flexbox",
+    "author": "Giulio Prina Ricotti",
+    "version": "0.0.1",
+    "main": "./lib/main.js",
+    "dependencies": {
+        
+    }
+}
