@@ -7,15 +7,15 @@ Phaser-flexbox uses facebook's open source yoga as a flexbox library
 
 ### Getting started with flexbox
 
-[flexbox tutorial] (http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+[flexbox tutorial](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 
 ### Yoga links
 
 [getting-started](https://facebook.github.io/yoga/docs/getting-started/)
 
-flexbox setup function] (https://github.com/facebook/yoga/blob/master/javascript/sources/Node.hh)
+[flexbox setup function](https://github.com/facebook/yoga/blob/master/javascript/sources/Node.hh)
 
-[flexbox-style enumeration] (https://github.com/facebook/yoga/blob/master/javascript/sources/YGEnums.js)
+[flexbox-style enumeration](https://github.com/facebook/yoga/blob/master/javascript/sources/YGEnums.js)
 
 ### File Description
 
@@ -25,19 +25,19 @@ flexbox setup function] (https://github.com/facebook/yoga/blob/master/javascript
 
 ### es5 version
 
-    Lib/yoga.bundle.js
+Use [yoga.bundle.js](https://github.com/giulioprinaricotti/phaser-flexbox/blob/master/lib/yoga.bundle.js)
 
-    <script src="/static/js/lib/yoga.bundle.js"></script>
+    <script src="/static/js/lib/yoga.bundle.js"></script>
 
 Yoga is loaded into the environment
 
-    var yoga=window.yoga;
+    var yoga = window.yoga;
 
 ### phaser-yoga tools
 
 Since yoga needs to set every element and it is relatively complicated to operate, I wrote a class to automate this step.
 
-    Lib/yoga-layout.js
+    Lib/yoga-layout.js
 
 ### Example
 
