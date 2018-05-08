@@ -1,56 +1,56 @@
 # phaser-flexbox
 
-[项目github地址](https://github.com/liangdas/phaser-flexbox)
+Forked from [liangdas/phaser-flexbox](https://github.com/liangdas/phaser-flexbox)
 
-phaser-flexbox使用的是facebook开源的yoga作为flexbox计算库
+Phaser-flexbox uses facebook's open source yoga as a flexbox library
 
 
-### flexbox入门
+### Getting started with flexbox
 
-[flexbox入门教程](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+[flexbox tutorial] (http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
 
-### yoga地址
+### Yoga links
 
 [getting-started](https://facebook.github.io/yoga/docs/getting-started/)
 
-[flexbox设置函数](https://github.com/facebook/yoga/blob/master/javascript/sources/Node.hh)
+flexbox setup function] (https://github.com/facebook/yoga/blob/master/javascript/sources/Node.hh)
 
-[flexbox样式枚举](https://github.com/facebook/yoga/blob/master/javascript/sources/YGEnums.js)
+[flexbox-style enumeration] (https://github.com/facebook/yoga/blob/master/javascript/sources/YGEnums.js)
 
-### 文件说明
+### File Description
 
-> 由于yoga默认只支持es6以上,在部分浏览器上会出现不兼容,目测UC浏览器就不支持。
+> Since yoga only supports es6 by default, incompatibility will occur on some browsers. Visual UC Browser does not support this.
 
-> 因此我编译了一个es5版本
+> So I compiled an es5 version
 
-### es5版本
+### es5 version
 
-    lib/yoga.bundle.js
+    Lib/yoga.bundle.js
 
-    <script src="/static/js/lib/yoga.bundle.js"></script>
+    <script src="/static/js/lib/yoga.bundle.js"></script>
 
-yoga就被加载到环境中来了
+Yoga is loaded into the environment
 
-var yoga=window.yoga;
+    var yoga=window.yoga;
 
-### phaser-yoga工具
+### phaser-yoga tools
 
-由于yoga需要对每一个元素进行设置，操作起来相对复杂，因此我写了一个类来自动化这一步操作
+Since yoga needs to set every element and it is relatively complicated to operate, I wrote a class to automate this step.
 
-    lib/yoga-layout.js
+    Lib/yoga-layout.js
 
-### 使用用法
+### Example
 
-    DialogState.js
+see [DialogState.js](https://github.com/giulioprinaricotti/phaser-flexbox/blob/master/DialogState.js)
 
-### 库大小
+### Library size
 
-    yoga库是用c++版本通过asm.js编译而成的,包体比较大 700k左右。使用的时候可以通过gzip方式压缩
-    gzip压缩后为120k
+    The yoga library is compiled from the asm.js using the C++ version. The body size is about 700k. When used can be compressed by gzip
+    120k after gzip compression
 
 ![phaser-flexbox](https://github.com/liangdas/phaser-flexbox/blob/master/demo.png)
 
-### 优化
+### Optimization
 
-    目前这个库还不是很完善，有一些功能可以优化，例如如果使用js特性更方便的设置flexbox。
-    用接近css原生配置的方式完成设置等,希望有兴趣的同学可以继续来优化
+    At present, this library is not very complete. There are some features that can be optimized. For example, if you use the js feature to set flexbox more conveniently.
+    Complete the settings with the approach to the native configuration of the CSS. Hope that interested students can continue to optimize.
